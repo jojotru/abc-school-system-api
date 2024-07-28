@@ -13,7 +13,7 @@ const allowedOrigins = require('./allowedOrigins')
 // }
 
 const corsOptions = require('cors');
-app.use(cors({
+app.use(corsOptions({
     origin: 'https://abc-school-system.onrender.com', // Allow only your frontend domain
     credentials: true // Enable this if you need to send cookies with requests
 }));
